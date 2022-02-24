@@ -1,0 +1,14 @@
+{
+    "name": "plops",
+    "version": "0.0.0",
+    "main": "./plopfile.js",
+    "types": "./plopfile.js",
+    "license": "MIT",
+    "devDependencies": {
+        "plop": "^3.0.5"
+    },
+    "dependencies": {},
+    "scripts": {
+    }
+  }
+  

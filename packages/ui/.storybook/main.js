@@ -2,6 +2,7 @@ module.exports = {
   stories: [
     '../components/**/*.stories.mdx',
     '../components/**/*.stories.@(js|jsx|ts|tsx)',
+    '../supplemental/**/*.stories.mdx'
   ],
   addons: [
     {
@@ -10,15 +11,20 @@ module.exports = {
         postcssLoaderOptions: {
           implementation: require('postcss'),
         },
-        // cssLoaderOptions: {
-        //   // When you have splitted your css over multiple files
-        //   // and use @import('./other-styles.css')
-        //   importLoaders: 1,
-        // },
       },
     },
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-storysource',
+    '@storybook/addon-docs',
+    '@storybook/addon-controls',
+    '@storybook/addon-measure',
+    '@storybook/addon-actions',
+    '@storybook/addon-outline',
+    "@storybook/addon-notes",
+    "@storybook/addon-options",
+    "@storybook/addon-knobs",
   ],
   framework: '@storybook/react',
 }
